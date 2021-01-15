@@ -259,3 +259,60 @@ nav {
   text-align: center;
   color: #adadad;
 }
+
+.send-message {
+  width: 504px;
+  height: 51px;
+  border-radius: 26px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+
+}
+
+.send-message>i>img {
+  padding-left: 15px;
+  position: relative;
+  top: 5px;
+}
+
+.send-message input {
+  padding: 17px 10px;
+  border: none;
+  width: 355px;
+}
+
+.send-message button {
+  width: 80px;
+  height: 45px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  background-color: #488cf5;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+
+}
+
+.send-message button:hover {
+  background-color: #f4891f;
+}
+
+.shape1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+}
+
+.shape2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+}
