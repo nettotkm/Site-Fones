@@ -138,9 +138,12 @@ table {
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header"
+  grid-template-areas:
+    "header header"
     "article picture"
-    "footer picture"
+    "footer picture";
+  width: 80%;
+  margin: 25px auto;
 }
 
 header {
@@ -178,4 +181,38 @@ nav {
   border-bottom: 1px dotted #8a378d;
   border-top: 1px dotted #8a378d;
   padding: 10px 15px;
+}
+
+#btn-bag {
+  background-color: #488cf5;
+}
+
+#btn-bag:hover {
+  background-color: #8a378d;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  border-radius: 23px;
+  box-shadow: 3px 3px 3px 0 rgb(0, 0, 0, 0.16);
+  -webkit-box-shadow: 3px 3px 3px 0 rgb(0, 0, 0, 0.16);
+  background-color: #f4891f;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.button>img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: #8a378d;
 }
