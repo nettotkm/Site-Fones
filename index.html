@@ -18,14 +18,20 @@
       <a href="#" id="brand">
         <img src="img/brand.png" alt="logo do site">
       </a>
-      <nav id="navigation">
+      <nav id="navigation" class="active">
         <ul>
           <li><a href="#">Recursos</a></li>
           <li><a href="#">Galeria</a></li>
           <li><a href="#">Informações</a></li>
           <li><a href="#">Suporte</a> </li>
+          <li class="item-menu-responsive"><a href="#">Sacola</a> </li>
+          <li class="item-menu-responsive"><a href="#">Login</a> </li>
         </ul>
       </nav>
+      <div class="menu-toggle">
+        <img src="img/menu.png" alt="menu">
+
+      </div>
       <button id="btn-bag" class="button">Sacola <img src="img/shopping-cart.png"> </button>
       <button id="btn-login" class="button">Login <img src="img/user.png"> </button>
     </header>
@@ -39,13 +45,41 @@
           <img src="img/envelope.png" alt="icone de uma carta de messagem">
         </i>
         <input type="email" placeholder="Escreva seu e-mail">
-        <button id="send-btn">Enviar</button>
+        <a href="#openModal">
+          <button id="send-btn">Enviar</button>
+        </a>
       </div>
     </article>
     <picture id="picture">
       <img src="./img/phone.png" alt="ilustração do fone">
     </picture>
+    <footer id="footer">
+      <small>&copy;Desenvolvimento Frontend</small>
+    </footer>
   </section>
+
+  <div id="openModal" class="modalDialog">
+    <div class="body-modal">
+      <a href="#close" title="Fechar" class="closeModal"></a>
+      <div class="side-left">
+        <img src="img/phone.png" class="phone-msg">
+        <img src="./img/envelope.png" alt="Icone de um envelope">
+        <h1>Mensagem Enviada</h1>
+      </div>
+      <div class="side-right">
+        <p>Obrigado por enviar a mensagem, vamos responder em breve!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
 
 </body>
 
